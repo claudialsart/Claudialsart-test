@@ -139,3 +139,11 @@ button[type=submit]{margin-top:10px}
   .grid{grid-template-columns:repeat(6,1fr)}
   .card{grid-column:span 6}
 }
+.inline-email{
+  margin-top:10px;
+  color:var(--muted);
+  text-align:center;
+}
+.inline-email a{
+  text-decoration:underline;
+}
