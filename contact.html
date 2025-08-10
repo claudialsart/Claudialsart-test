@@ -28,17 +28,34 @@
 
 <section class="contact-hero">
   <div class="contact-box">
-    <h2>Contact</h2>
-    <p class="placeholder">TO BE WRITTEN — ONE LINE CONTACT INTRO.</p>
+<p>For enquiries, commissions, or collaborations, feel free to get in touch below.</p>
     <form action="https://formspree.io/f/mldljgqw" method="POST">
-      <div class="row">
-        <div><label for="name">Name</label><input id="name" name="name" required></div>
-        <div><label for="email">Email</label><input id="email" type="email" name="_replyto" required></div>
-        <div class="full"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
-      </div>
-      <input type="hidden" name="_next" value="thank-you.html">
-      <button class="button primary" type="submit">Send</button>
-    </form>
+  <div class="row">
+    <div>
+      <label for="name">Name</label>
+      <input id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" name="_replyto" required>
+    </div>
+    <div class="full">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+  </div>
+  <!-- This hidden iframe method was the working trick -->
+  <input type="hidden" name="_next" value="https://claudialsart.com/thank-you.html">
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+  <button class="button primary" type="submit">Send</button>
+</form>
+<script>
+  document.querySelector('form').addEventListener('submit', function() {
+    setTimeout(function(){
+      window.location.href = 'thank-you.html';
+    }, 300);
+  });
+</script>
   </div>
 </section>
 
