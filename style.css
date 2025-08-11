@@ -147,3 +147,71 @@ button[type=submit]{margin-top:10px}
 .inline-email a{
   text-decoration:underline;
 }
+
+
+/* === HOME STYLE PANELS (slideshow) === */
+.style-panels{ border-top:1px solid var(--border); }
+.style-panel{
+  position:relative; min-height:58vh; display:grid; align-items:center;
+  border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+  overflow:hidden; background:var(--card);
+}
+.slides{ position:absolute; inset:0; z-index:0; }
+.slide{
+  position:absolute; inset:0; background:center/cover no-repeat;
+  opacity:0; transition:opacity 1s ease;
+}
+.slide.visible{ opacity:1; }
+.style-panel::after{
+  content:""; position:absolute; inset:0; z-index:1;
+  background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.6));
+}
+.style-panel__inner{ position:relative; z-index:2; padding:48px 0; }
+.style-panel h2{ font-size: clamp(24px, 4.5vw, 40px); margin:0 0 8px; }
+.style-panel p{ max-width:800px; color:var(--muted); margin:0; }
+
+/* portfolio subsection label + price line */
+.subsection{
+  margin:24px auto 8px; font-size:20px; color:var(--muted);
+  border-left:4px solid var(--accent); padding-left:10px;
+}
+.card .price{ margin-top:6px; font-weight:600; letter-spacing:.2px; }
+
+
+/* === MOBILE SPACING + DRAWER MENU === */
+@media (max-width: 768px) {
+  /* Fix header/menu padding on mobile */
+  .nav {
+    padding: 12px 4%;
+  }
+
+  /* Drawer menu styles */
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: var(--card);
+    position: absolute;
+    top: 64px; /* below header */
+    right: 0;
+    width: 220px;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 0;
+    z-index: 999;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    width: 100%;
+  }
+
+  /* Ensure hero text isn't covered */
+  .hero-inner {
+    padding: 40px 4%;
+  }
+}
