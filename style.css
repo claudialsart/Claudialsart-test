@@ -56,7 +56,15 @@ img{max-width:100%;display:block}
 .hero-inner{
   position:relative;z-index:1;text-align:center;padding:60px 0;
 }
-.hero h1{font-size:clamp(28px,6vw,64px);margin:0 0 12px 0;letter-spacing:.5px}
+/* Hero title typography – final (tighter version) */
+.hero h1 {
+  font-family: 'EB Garamond', serif !important;
+  text-transform: uppercase;
+  letter-spacing: 0.03em; /* tighter spacing */
+  font-weight: 700;
+  font-size: clamp(28px, 6vw, 56px);
+  color: var(--text);
+  margin: 0 0 12px 0;
 .hero p{color:var(--muted);max-width:800px;margin:0 auto 28px auto}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 .button{
