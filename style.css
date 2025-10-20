@@ -265,3 +265,13 @@ button[type=submit]{margin-top:10px}
   margin: 0 0 14px 0;
   max-width: 70ch;
 }
+/* Font mix: EB Garamond for titles, Alice for text */
+body {
+  font-family: 'Alice', serif;
+}
+
+h1, h2 {
+  font-family: 'EB Garamond', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
