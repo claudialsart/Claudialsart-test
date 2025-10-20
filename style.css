@@ -215,3 +215,11 @@ button[type=submit]{margin-top:10px}
     padding: 40px 4%;
   }
 }
+/* Hero title typography */
+.hero h1 {
+  font-family: 'EB Garamond', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  font-size: clamp(28px, 6vw, 56px);
+}
