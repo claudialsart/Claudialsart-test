@@ -275,3 +275,95 @@ h1, h2 {
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+/* Commissions layout */
+.commissions-hero h1{
+  font-size: clamp(26px, 4vw, 34px);
+  margin: 0 0 10px 0;
+}
+.comm-intro{
+  color: var(--muted);
+  max-width: 720px;
+  margin: 0;
+}
+
+.commissions-content .panel,
+.commissions-form .panel{
+  background: rgba(11,11,13,.8);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,.25);
+}
+
+.commissions-content h2,
+.commissions-form h2{
+  margin: 0 0 10px 0;
+  font-size: clamp(22px, 3vw, 28px);
+}
+.commissions-content p,
+.commissions-form p{
+  color: var(--muted);
+  margin: 0 0 14px 0;
+  max-width: 72ch;
+}
+
+/* Pricing list */
+.comm-pricing{
+  margin: 6px 0 14px 20px;
+  padding: 0;
+}
+.comm-pricing li{
+  margin: 4px 0;
+}
+
+/* Form layout for commissions */
+.commissions-form form{
+  margin-top: 12px;
+}
+.form-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.form-field{
+  flex: 1;
+  min-width: 180px;
+}
+.form-field.full{
+  flex-basis: 100%;
+}
+.form-field label{
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.form-field input,
+.form-field textarea,
+.form-field select{
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #0e0e13;
+  color: var(--text);
+  font: inherit;
+}
+.form-field textarea{
+  min-height: 120px;
+  resize: vertical;
+}
+
+@media (max-width: 700px){
+  .comm-intro{
+    font-size: 15px;
+  }
+  .commissions-content .panel,
+  .commissions-form .panel{
+    padding: 18px;
+  }
+  .form-row{
+    flex-direction: column;
+  }
+}
