@@ -82,51 +82,61 @@
       for me to understand your idea and reply with options and a quote.
     </p>
 
-    <form action="https://formspree.io/f/mldljgqw" method="POST">
-      <input type="hidden" name="_redirect" value="https://claudialsart.com/thank-you.html">
+   <form action="https://formspree.io/f/mldljgqw" method="POST">
+  <!-- Redirect trick (same as the Contact page) -->
+  <input type="hidden" name="_next" value="https://claudialsart.com/thank-you.html">
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
-      <div class="form-row">
-        <div class="form-field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="_replyto" required>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-field full">
-          <label for="size-budget">Size and budget</label>
-          <select id="size-budget" name="size_and_budget" required>
-            <option value="">Select an option</option>
-            <option value="small">Small painting up to 30 × 40 cm, from £300</option>
-            <option value="medium">Medium painting around 40 × 50 to 50 × 70 cm, from £550</option>
-            <option value="large">Large painting from 60 × 80 cm and above, from £900</option>
-            <option value="other">Other size, open to suggestions</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-field full">
-          <label for="inspiration">Inspiration</label>
-          <textarea id="inspiration" name="inspiration"
-            placeholder="Which of my works or styles do you feel closer to? Do you have a colour palette or mood in mind?"></textarea>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-field full">
-          <label for="questions">Questions or notes</label>
-          <textarea id="questions" name="questions"
-            placeholder="Anything else you would like me to know?"></textarea>
-        </div>
-      </div>
-
-      <button type="submit" class="button primary">Submit your enquiry</button>
-    </form>
+  <div class="form-row">
+    <div class="form-field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="_replyto" required>
+    </div>
   </div>
+
+  <div class="form-row">
+    <div class="form-field full">
+      <label for="size-budget">Size and budget</label>
+      <select id="size-budget" name="size_and_budget" required>
+        <option value="">Select an option</option>
+        <option value="small">Small painting up to 30 × 40 cm, from £300</option>
+        <option value="medium">Medium painting around 40 × 50 to 50 × 70 cm, from £550</option>
+        <option value="large">Large painting from 60 × 80 cm and above, from £900</option>
+        <option value="other">Other size, open to suggestions</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-field full">
+      <label for="inspiration">Inspiration</label>
+      <textarea id="inspiration" name="inspiration"
+        placeholder="Which of my works or styles do you feel closer to? Do you have a colour palette or mood in mind?"></textarea>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-field full">
+      <label for="questions">Questions or notes</label>
+      <textarea id="questions" name="questions"
+        placeholder="Anything else you would like me to know?"></textarea>
+    </div>
+  </div>
+
+  <button type="submit" class="button primary">Submit your enquiry</button>
+</form>
+
+<script>
+  document.querySelector('form').addEventListener('submit', function() {
+    setTimeout(function(){
+      window.location.href = 'thank-you.html';
+    }, 300);
+  });
+</script>
 </section>
 
 <footer class="footer">
