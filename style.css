@@ -464,3 +464,47 @@ button[type=submit]{margin-top:10px}
   letter-spacing: 0.03em;
   font-size: clamp(32px, 6vw, 64px);
 }
+/* ===== PORTFOLIO PAGE TYPOGRAPHY ===== */
+
+.portfolio-page h1,
+.portfolio-page h2,
+.portfolio-page h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-page p,
+.portfolio-page li,
+.portfolio-page .meta,
+.portfolio-page .price {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 16px;
+}
+/* ===== PRINTS PAGE TYPOGRAPHY ===== */
+.prints-page h1,
+.prints-page h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.prints-page p,
+.prints-page .meta,
+.prints-page .title {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+/* RESTORE ORIGINAL HERO FONT STYLE */
+.index-page .hero h1 {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;   /* tighter, elegant */
+  line-height: 1.05;        /* reduces vertical spacing */
+  font-size: clamp(28px, 5.8vw, 62px); /* closer to the old proportions */
+  margin-bottom: 16px;
+}
