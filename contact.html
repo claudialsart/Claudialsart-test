@@ -1,12 +1,18 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — Claudia Ls Art</title>
+
+  <!-- Google Fonts (same as other pages) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="contact-page">
 
 <header class="header">
   <div class="container nav">
@@ -14,6 +20,7 @@
       <img src="./assets/images/logo-light.png" alt="Claudia Ls Art logo">
       <span class="site-title">Claudia Ls Art</span>
     </a>
+
     <nav class="menu">
       <a href="index.html">Home</a>
       <a href="portfolio.html">Portfolio</a>
@@ -22,44 +29,59 @@
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
+
     <button class="burger" aria-label="Open menu">☰</button>
   </div>
 </header>
 
 <section class="contact-hero">
   <div class="contact-box">
-<h2>Contact</h2>
-<p>For enquiries, commissions, or collaborations, feel free to get in touch below.</p>
-<p class="inline-email">You can also email me directly at
-  <a href="mailto:info@claudialsart.com">info@claudialsart.com</a>.
-</p>
+
+    <h2>Contact</h2>
+
+    <p>
+      For enquiries, commissions, or collaborations, feel free to get in touch below.
+    </p>
+
+    <p class="inline-email">
+      You can also email me directly at
+      <a href="mailto:info@claudialsart.com">info@claudialsart.com</a>.
+    </p>
+
     <form action="https://formspree.io/f/mldljgqw" method="POST">
-  <div class="row">
-    <div>
-      <label for="name">Name</label>
-      <input id="name" name="name" required>
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input id="email" type="email" name="_replyto" required>
-    </div>
-    <div class="full">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
-    </div>
-  </div>
-  <!-- This hidden iframe method was the working trick -->
-  <input type="hidden" name="_next" value="https://claudialsart.com/thank-you.html">
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-  <button class="button primary" type="submit">Send</button>
-</form>
-<script>
-  document.querySelector('form').addEventListener('submit', function() {
-    setTimeout(function(){
-      window.location.href = 'thank-you.html';
-    }, 300);
-  });
-</script>
+
+      <div class="row">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" required>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="_replyto" required>
+        </div>
+
+        <div class="full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+      </div>
+
+      <!-- Redirect trick (same as commissions) -->
+      <input type="hidden" name="_next" value="https://claudialsart.com/thank-you.html">
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+      <button class="button primary" type="submit">Send</button>
+    </form>
+
+    <script>
+      document.querySelector('form').addEventListener('submit', function() {
+        setTimeout(function(){
+          window.location.href = 'thank-you.html';
+        }, 300);
+      });
+    </script>
+
   </div>
 </section>
 
@@ -67,8 +89,12 @@
   <div class="container">
     <div>© <span id="year"></span> Claudia Ls Art. All rights reserved.</div>
   </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </footer>
+
 <script src="script.js"></script>
 
-</body></html>
+</body>
+</html>
