@@ -392,3 +392,25 @@ button[type=submit]{margin-top:10px}
   font-size: 17px;
   line-height: 1.7;
 }
+/* ===== COMMISSIONS PAGE TYPOGRAPHY ===== */
+
+.commissions-page {
+  font-family: 'Lora', serif !important;
+}
+
+.commissions-page h1,
+.commissions-page h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.commissions-page p,
+.commissions-page li,
+.commissions-page label,
+.commissions-page input,
+.commissions-page textarea,
+.commissions-page select {
+  font-family: 'Lora', serif !important;
+}
