@@ -464,3 +464,22 @@ button[type=submit]{margin-top:10px}
   letter-spacing: 0.03em;
   font-size: clamp(32px, 6vw, 64px);
 }
+/* ===== PORTFOLIO PAGE TYPOGRAPHY ===== */
+
+.portfolio-page h1,
+.portfolio-page h2,
+.portfolio-page h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-page p,
+.portfolio-page li,
+.portfolio-page .meta,
+.portfolio-page .price {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 16px;
+}
