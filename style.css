@@ -442,3 +442,17 @@ button[type=submit]{margin-top:10px}
 .button {
   font-family: 'Montserrat', sans-serif;
 }
+/* INDEX PAGE TYPOGRAPHY */
+.index-page h1,
+.index-page h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.index-page p {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 17px;
+}
