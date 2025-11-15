@@ -414,3 +414,31 @@ button[type=submit]{margin-top:10px}
 .commissions-page select {
   font-family: 'Lora', serif !important;
 }
+/* ===== CONTACT PAGE TYPOGRAPHY ===== */
+
+.contact-page h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+
+.contact-page p,
+.contact-page label,
+.contact-page textarea,
+.contact-page input {
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Ensure menu uses Montserrat everywhere */
+.menu a,
+.site-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Button font stays Montserrat for consistency */
+.button {
+  font-family: 'Montserrat', sans-serif;
+}
