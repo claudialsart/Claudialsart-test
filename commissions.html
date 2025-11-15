@@ -4,9 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Commissions — Claudia Ls Art</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="commissions-page">
 
 <header class="header">
   <div class="container nav">
@@ -26,117 +32,131 @@
   </div>
 </header>
 
+<!-- HERO -->
 <section class="section commissions-hero">
   <div class="container">
     <h1>Commissions</h1>
     <p class="comm-intro">
-      I work with collectors to create paintings that carry a personal meaning. Together we define
+      I work with collectors to create paintings that hold personal meaning. Together we define
       palette, mood, and symbolism, shaping a piece that feels both intimate and timeless.
     </p>
   </div>
 </section>
 
+<!-- PROCESS -->
 <section class="section commissions-content">
   <div class="container panel">
     <h2>The commission process</h2>
+
     <p>
-      Commissioning a painting is a simple, collaborative process. It starts with a short
-      conversation about what you have in mind, where the piece will live, and how you want it
-      to feel. You do not need a perfect idea. I can guide you with suggestions on size,
-      composition, and colour palette.
+      Commissioning a painting is simple and collaborative. It begins with a short conversation
+      about your idea — where the piece will live, the feeling you want it to carry, and any
+      palette or symbolism that matters to you. You don’t need a perfect vision. I can guide you
+      with suggestions for size, composition, and colour.
     </p>
+
     <p>
-      Once we agree on the concept, size, and price, a deposit secures your spot in my schedule.
-      During the painting process I may share progress updates, especially if the piece is very
-      personal, so you can feel involved without needing to direct every detail.
+      Once we agree on the concept, size, and price, a deposit secures your place in my schedule.
+      During the creation process, I may share progress updates, especially for personal pieces,
+      so you can feel involved while still giving the work space to grow naturally.
     </p>
+
     <p>
-      When the painting is finished, I will send final photos for approval, then carefully pack it
-      and ship it to you. Each work is painted in professional oil colours on quality surfaces and
-      finished with a protective varnish once fully dry.
+      When the painting is complete, I’ll send final photos for approval, then safely package and
+      ship it to you. All works are painted in professional oil colours on archival surfaces and
+      varnished once fully cured.
     </p>
 
     <h2>Pricing guide</h2>
+
     <p>
-      Prices depend on size, level of detail, and the complexity of the idea. To give you a rough
-      guide, most commissions fall within these ranges:
+      Prices vary depending on size, detail, and complexity. Most commissions usually fall within
+      these ranges:
     </p>
+
     <ul class="comm-pricing">
-      <li>Small works up to 30 × 40 cm from £300</li>
-      <li>Medium works around 40 × 50 cm to 50 × 70 cm from £550</li>
-      <li>Larger pieces from 60 × 80 cm and above from £900</li>
+      <li>Small works up to 30 × 40 cm — from £300</li>
+      <li>Medium works around 40 × 50 cm to 50 × 70 cm — from £550</li>
+      <li>Large works from 60 × 80 cm and above — from £900</li>
     </ul>
+
     <p>
-      These are starting points. After you send your enquiry, I will reply with a clear quote
-      based on your idea and chosen size. A deposit, usually around 30 percent, is required to
-      begin and is non-refundable once I start the painting.
+      These are starting points. After you send your enquiry, I’ll reply with a clear, personalised
+      quote based on your idea. A deposit (around 30 percent) is required to begin and becomes
+      non-refundable once work starts.
     </p>
+
   </div>
 </section>
 
+<!-- FORM -->
 <section class="section commissions-form">
   <div class="container panel">
     <h2>Request a commission</h2>
     <p>
-      Please share a bit about what you are looking for. This form is not a contract. It is a way
-      for me to understand your idea and reply with options and a quote.
+      Share as much or as little as you like. This form helps me understand your vision before
+      sending you size options, timelines, and a personalised quote.
     </p>
 
-   <form action="https://formspree.io/f/mldljgqw" method="POST">
-  <!-- Redirect trick (same as the Contact page) -->
-  <input type="hidden" name="_next" value="https://claudialsart.com/thank-you.html">
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    <form action="https://formspree.io/f/mldljgqw" method="POST">
 
-  <div class="form-row">
-    <div class="form-field">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-field">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="_replyto" required>
-    </div>
+      <!-- Redirect -->
+      <input type="hidden" name="_next" value="https://claudialsart.com/thank-you.html">
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full">
+          <label for="size-budget">Size and budget</label>
+          <select id="size-budget" name="size_and_budget" required>
+            <option value="">Select an option</option>
+            <option value="small">Small painting up to 30 × 40 cm — from £300</option>
+            <option value="medium">Medium painting 40 × 50 to 50 × 70 cm — from £550</option>
+            <option value="large">Large painting from 60 × 80 cm and above — from £900</option>
+            <option value="other">Other size or request</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full">
+          <label for="inspiration">Inspiration</label>
+          <textarea id="inspiration" name="inspiration"
+            placeholder="Which of my works or styles are you drawn to? Do you have a mood or palette in mind?"></textarea>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full">
+          <label for="questions">Questions or notes</label>
+          <textarea id="questions" name="questions"
+            placeholder="Anything else you'd like me to know?"></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="button primary">Submit your enquiry</button>
+    </form>
+
+    <script>
+      document.querySelector('form').addEventListener('submit', function() {
+        setTimeout(function(){
+          window.location.href = 'thank-you.html';
+        }, 300);
+      });
+    </script>
+
   </div>
-
-  <div class="form-row">
-    <div class="form-field full">
-      <label for="size-budget">Size and budget</label>
-      <select id="size-budget" name="size_and_budget" required>
-        <option value="">Select an option</option>
-        <option value="small">Small painting up to 30 × 40 cm, from £300</option>
-        <option value="medium">Medium painting around 40 × 50 to 50 × 70 cm, from £550</option>
-        <option value="large">Large painting from 60 × 80 cm and above, from £900</option>
-        <option value="other">Other size, open to suggestions</option>
-      </select>
-    </div>
-  </div>
-
-  <div class="form-row">
-    <div class="form-field full">
-      <label for="inspiration">Inspiration</label>
-      <textarea id="inspiration" name="inspiration"
-        placeholder="Which of my works or styles do you feel closer to? Do you have a colour palette or mood in mind?"></textarea>
-    </div>
-  </div>
-
-  <div class="form-row">
-    <div class="form-field full">
-      <label for="questions">Questions or notes</label>
-      <textarea id="questions" name="questions"
-        placeholder="Anything else you would like me to know?"></textarea>
-    </div>
-  </div>
-
-  <button type="submit" class="button primary">Submit your enquiry</button>
-</form>
-
-<script>
-  document.querySelector('form').addEventListener('submit', function() {
-    setTimeout(function(){
-      window.location.href = 'thank-you.html';
-    }, 300);
-  });
-</script>
 </section>
 
 <footer class="footer">
@@ -145,6 +165,7 @@
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>
+
 <script src="script.js"></script>
 
 </body>
