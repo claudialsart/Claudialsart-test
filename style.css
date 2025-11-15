@@ -483,3 +483,18 @@ button[type=submit]{margin-top:10px}
   line-height: 1.7;
   font-size: 16px;
 }
+/* ===== PRINTS PAGE TYPOGRAPHY ===== */
+.prints-page h1,
+.prints-page h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.prints-page p,
+.prints-page .meta,
+.prints-page .title {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
