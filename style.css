@@ -374,3 +374,21 @@ button[type=submit]{margin-top:10px}
     flex-direction: column;
   }
 }
+/* FORCE About Page Fonts */
+
+.about-page {
+  font-family: 'Lora', serif !important;
+}
+
+.about-page h1,
+.about-page h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.about-page p {
+  font-family: 'Lora', serif !important;
+  font-size: 17px;
+  line-height: 1.7;
+}
