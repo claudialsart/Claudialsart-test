@@ -498,13 +498,3 @@ button[type=submit]{margin-top:10px}
   font-size: 16px;
   line-height: 1.7;
 }
-/* RESTORE ORIGINAL HERO FONT STYLE */
-.index-page .hero h1 {
-  font-family: 'Playfair Display', serif !important;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;   /* tighter, elegant */
-  line-height: 1.05;        /* reduces vertical spacing */
-  font-size: clamp(28px, 5.8vw, 62px); /* closer to the old proportions */
-  margin-bottom: 16px;
-}
